@@ -1,3 +1,3 @@
 // main.js
-const s = require('\mymodule.js');
+const s = require('./mymodule');
 console.log(s);
