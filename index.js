@@ -416,3 +416,42 @@ Loop over nums = [1, 2, 3, 4]; and print out double the value of every element. 
 //     }                                    // --------------------------> go over more about context and scope. 
 // };  
 // f(1, 2, 3);
+
+
+// Write a quick loop. For every element in the following array, print it out. →
+
+// var numbers = [1, 2, 3];
+// for (var i = 0; i < numbers.length; i++) {
+// 	var current = numbers[i];
+// 	console.log(current); 
+// }
+
+
+/* One simple abstraction is to hide the details of the iteration by creating a function called logEach. →
+
+it'll take an array as a parameter
+… and just print out every element */
+
+// var numbers = [1, 2, 3];
+// function logEach(arr) {
+// 	for (var i = 0; i < arr.length; i++) {
+// 		console.log(arr[i]); 
+// 	}
+// }
+// logEach(numbers);
+
+
+/* Our Implementation of forEach
+Create a function called forEach. →
+
+it'll take two parameters, the array, arr, and some sort of function, action
+it will run the function for every element in the array */
+
+// var numbers = [1, 2, 3];
+// function forEach(arr, action) {
+// 	for (var i = 0; i < arr.length; i++) {
+// 		action(arr[i]); 
+// 	}
+// }
+// // instead of just logging each number as is, log the square of ever number
+// forEach(numbers, function(arrayElement) { console.log(arrayElement * arrayElement)});
