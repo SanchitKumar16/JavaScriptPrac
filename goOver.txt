@@ -22,3 +22,16 @@ Note that:
 
 if used in the "main" file, then it's the path to the main file
 if used in a module, both are the path to that module, even if the module is included!
+
+--------------------------------------------------------------------------------------------------------------------
+Higher Order Functions as Constructs for Abstractions
+A higher order function is a function that does at least one of the following:
+
+takes a function or functions as a parameter (input)
+returns a function
+
+
+foreach - calls a function for every element in an array (no return value)
+map - calls a function on every element in an array to return a new array composed of those elements
+filter - creates and returns a new array composed of only elements that pass a supplied test function
+reduce - reduces an array to a single value, and returns that value
