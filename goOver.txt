@@ -1,0 +1,24 @@
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/js/js-node-npm-debug-git.html#/41
+(go over this code and what it is doing.)
+
+- need to go over context and scope within JavaScript.
+
+
+-CommonJS allows the inclusion and execution of JavaScript in other files by using: →
+export or module.exports in a module to specify what functions, classes, or objects are allowed to be included
+the require function to bring in exported objects…
+
+
+
+***************** Go over why the moduleP.js and main.js files cannot find moduel. ****************************************** 
+
+
+
+Your JavaScript modules contains two "built-in" variables:
+
+__filename: absolute path to the module file, including file name
+__dirname: the absolute path to the directory containing the file
+Note that:
+
+if used in the "main" file, then it's the path to the main file
+if used in a module, both are the path to that module, even if the module is included!
