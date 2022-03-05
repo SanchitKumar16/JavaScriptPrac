@@ -538,7 +538,7 @@ map returns a new array with every element transformed */
 
 /* Using map to try using it to calculate the product of all of the elements in [2, 5, 4, 3,]. → */
 
-console.log([2, 5, 4, 3,].reduce(function(product, currentNumber ){
-	return product * currentNumber;
-}, 1));
+// console.log([2, 5, 4, 3,].reduce(function(product, currentNumber ){
+// 	return product * currentNumber;
+// }, 1));
 

@@ -5,3 +5,15 @@ const cards = [{'suit':'♦', 'face':'4'},
              {'suit':'♠', 'face':'2'},
              {'suit':'♦', 'face':'7'},
              {'suit':'♥', 'face':'K'}];
+
+
+
+let count = 0;
+cards.forEach(function(card) {
+	if (['K', 'Q', 'J'].indexOf(card.face) !== -1) {
+		count += 1;
+	} 
+});
+console.log(count);
+
+
