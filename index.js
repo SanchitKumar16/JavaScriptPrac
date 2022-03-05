@@ -483,3 +483,62 @@ And the implementation… → */
 // 	});
 // 	return filtered;
 // }
+
+
+// ----------------------> Our own implementation of the map method. 
+
+// function map(arr, transform) {
+// 	const transformed = [];
+// 	arr.forEach(function(element) {
+// 		transformed.push(transform(element));
+// 	});
+// 	return transformed;
+// }
+// const result = map(['hello', 'hey', 'hi'], function(greeting) {return greeting + '!!'});
+// console.log(result);
+
+/* Again, JavaScript arrays already have a map method…
+
+1 parameter - a callback (the function that transforms each element)
+the callback is executed with the current value, index and original array
+the callback returns a new value/object to be added
+map returns a new array with every element transformed */
+
+// words = ['hey', 'yo', 'sup']
+// const shoutedWords = words.map(function(word) {
+// 	return word.toUpperCase() + '!';
+// });
+// console.log(shoutedWords);
+
+/* Our Version of Reduce */
+
+// function reduce(arr, combine, start) {
+//     let accum = start;
+//     arr.forEach(function(ele){
+//       accum = combine(accum, ele); 
+//     }); 
+//     return accum;
+//   }
+  
+//   console.log(reduce([4, 12, 5], function(accum, ele) {
+//     return accum + ele;  
+//   }, 0));
+
+//   /* Reduce Continued
+// Here's an example of finding the minimum (uses first element as initial min) with reduce: */
+// const numbers = [-5, -2, -1, -10, -3];
+
+// console.log(reduce(numbers, function(accum, ele) {
+//   if(accum < ele) {
+//     return accum;
+//   } else {
+//     return ele; 
+//   }
+// }, numbers[0]));
+
+/* Using map to try using it to calculate the product of all of the elements in [2, 5, 4, 3,]. → */
+
+console.log([2, 5, 4, 3,].reduce(function(product, currentNumber ){
+	return product * currentNumber;
+}, 1));
+
