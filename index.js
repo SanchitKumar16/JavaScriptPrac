@@ -455,3 +455,31 @@ it will run the function for every element in the array */
 // }
 // // instead of just logging each number as is, log the square of ever number
 // forEach(numbers, function(arrayElement) { console.log(arrayElement * arrayElement)});
+
+// only give back the strings that start with 'ba'
+
+// const words = ['foo', 'bar', 'baz', 'qux'];
+// const filtered_words = words.filter(function(word) {   ------------> Non DIY filter usage. 
+// 	return word.indexOf('ba') !== -1;
+// });
+// console.log(filtered_words);
+
+/* A DIY Filter Function
+We implemented filter as a standalone function as well. The algorithm was fairly compact; what was it? →
+
+create a new array to hold the filtered elements
+go through every element in the original array
+check to see if it passes the test (execute the callback on it)
+if it passes, add it to the new array
+
+And the implementation… → */
+
+// function filter(arr, test) {
+// 	const filtered = [];
+// 	arr.forEach(function(element) {
+// 		if(test(element)) {
+// 			filtered.push(element)
+// 		}
+// 	});
+// 	return filtered;
+// }

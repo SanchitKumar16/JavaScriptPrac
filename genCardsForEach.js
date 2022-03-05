@@ -12,3 +12,9 @@ var generateCards = function() {
 console.log(generateCards());
 
 // -------------------------------------------> Go over this for each. 
+
+var deck = generateCards();
+var filtered = deck.filter(function(card) {
+	return parseInt(card.face, 10) <= 3;
+});
+console.log(filtered);
