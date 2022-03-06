@@ -74,3 +74,31 @@ reduce
 call
 apply
 bind
+
+
+---------------------------------------------------------------------------------------------------
+In standalone functions, this refers to the global object
+
+
+Besides method invocation and regular function invocation, what are two other ways of executing a function? →
+
+call - invoke function that call was called on with specified this and positional arguments
+apply - invoke function that apply was called on with specified this and an Array containing positional arguments
+
+When invoking a function with call or apply:
+
+this will be bound to the value passed in as the first argument.
+
+
+
+Summary
+What is this?????
+
+1.regular function invocation
+    -this is the global object
+2.method call
+    -this is the object the method was called on
+3.invoked with call or apply
+    -this is the first argument passed in to call or apply
+4.arrow function
+    -this is this from the enclosing context

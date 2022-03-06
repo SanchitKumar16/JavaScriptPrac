@@ -589,5 +589,49 @@ The spread operator can also be used to expand Arrays within Array literals: */
 // wasteTime = logExecutionTime(wasteTime);
 // wasteTime(5000000);     // ---------------------------------------------> Go over this in more detail. 
 
+// global.outside = 5;
+// const f = function() {
+// 	console.log(this.outside);
+// }
+// f();
 
+
+/* Arrow Functions
+In previous slides, we said that the this value in arrow functions is the this in the scope that the arrow function was created in (that is, it doesn't have it's own this, it just uses the one that's already there!
+
+Let's see how this works: → */
+
+
+// const counter = {numbers: [1, 2, 3, 4], animal:'owl'};
+
+// counter.count = function() {
+//     this.numbers.forEach((n) => {
+//         console.log(n, this.animal + (n > 1 ? 's' : ''));
+//     });
+// };
+// counter.count();
+
+/* Better! this is whatever this refers to in the count method, and because count was invoked as a method,
+ this is the object that count was called on.
+ */
+
+// let sum2 = (a,b) => {
+//     return a + b;
+// }
+
+// console.log(sum2(10,2));
+
+
+// console.log(global)
+
+// /* And let's try (inadvertently, of course. oops!) adding something to the global object: */
+// /* (oh yeah, in the browser, the global object is window) */
+
+// function makeMessage() {
+// 	// oops, forgot var/let/const... I'm a global!
+// 	message = 'hello there';
+// }
+// makeMessage();
+// console.log(message);
+// console.log(global.message);
 
