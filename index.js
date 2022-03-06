@@ -542,3 +542,52 @@ map returns a new array with every element transformed */
 // 	return product * currentNumber;
 // }, 1));
 
+// const nums = [1, 2, 3, 4, 5];
+// console.log(nums.filter(x => x % 2 === 0));
+
+// const isEven = (x) => {return x % 2 === 0;};
+
+// const f = function(x, y, z) {
+// 	return x - y + z;
+// }
+// console.log(f.length);
+
+// function f(a, b, ...args) { console.log(args); }
+// f('foo', 'bar', 'baz', 'qux'); // prints out ['baz', 'qux']
+
+// // (this is called a variadic function, a function that can have and indefinite number of arguments / arity!)
+
+
+/* Spread Operator in Array Literals
+The spread operator can also be used to expand Arrays within Array literals: */
+
+// const words = ['foo', 'bar', 'baz'];
+// const moreWords = ['start', ...words, 'end']
+// console.log(moreWords);
+// // [ 'start', 'foo', 'bar', 'baz', 'end']
+
+/* You can also use the spread operator to make a shallow copy of an Array: */
+
+
+// const arrs = [[1, 2], [3, 4]];
+// const newArrs = [...arrs];
+// console.log(newArrs); // yay copied!
+
+// arrs[0].push('surprise!');
+// console.log(newArrs); // beware, shallow!
+
+//  function logExecutionTime(f) {
+//  	return function(arg) {
+//  		console.time('function timing');
+//  		const val = f(arg);
+//  		console.timeEnd('function timing');
+//  		return val; 
+//     };
+// }
+
+// function wasteTime(limit) { for(let i=0;i < limit; i++) { }}
+// wasteTime = logExecutionTime(wasteTime);
+// wasteTime(5000000);     // ---------------------------------------------> Go over this in more detail. 
+
+
+

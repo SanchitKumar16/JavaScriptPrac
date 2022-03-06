@@ -35,3 +35,42 @@ foreach - calls a function for every element in an array (no return value)
 map - calls a function on every element in an array to return a new array composed of those elements
 filter - creates and returns a new array composed of only elements that pass a supplied test function
 reduce - reduces an array to a single value, and returns that value
+
+
+
+------------------ Go over in more detail ---------------------------------
+Bind Example
+Fixing the first parameter, called base, of our function.
+
+const areaTriangleBase100 = areaTriangle.bind(null, 100);
+
+// call with only one argument now
+console.log(areaTriangleBase100(3));
+
+Note that you'll also see bind used to fix/set a function or method's this.
+
+
+
+
+------------------------ GO OVER THIS --------------------------------------
+Decorators
+A function that accepts another function as a parameter, 
+wraps its call in another function, and returns that wrapper as a new function… is called a function decorator.
+Why might function decorators be a useful? When would it make sense to implement 
+a decorator rather than to modify an actual function? →
+
+
+
+
+We just saw a bunch of higher order functions in JavaScript… and we even created our own.
+
+-Array Methods
+forEach
+map
+filter
+reduce
+
+-Function Methods
+call
+apply
+bind
