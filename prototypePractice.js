@@ -12,3 +12,4 @@ const protoWerewolf = {
 const sadWerewolf = Object.create(protoWerewolf);
 sadWerewolf.mood = 'sullen';
 sadWerewolf.howl('moon');
+

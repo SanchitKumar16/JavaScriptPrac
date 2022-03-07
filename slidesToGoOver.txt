@@ -1,0 +1,4 @@
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/21
+
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/23 ---> Go over how to call multiple properties
+                                                                                            and methods from the super class.

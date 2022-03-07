@@ -138,3 +138,15 @@ this gives back the [[prototype]] of the passed in object obj…
 
 functions derive from Function.prototype
 arrays derive from Array.prototype
+
+What if we only want the properties that were explicitly set on our object, rather than including inherited ones. →
+We could use the hasOwnProperty method that every object inherits from Object.prototype!
+
+
+If you have an object, and you'd like to know what constructor it came from, you can use the instanceof operator.
+    -instance on left
+    -constructor on right
+What do you think the following code will print out? →
+
+console.log(myCar instanceof Car);
+console.log(myCar instanceof Bike);

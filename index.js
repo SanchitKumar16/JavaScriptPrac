@@ -729,3 +729,9 @@ What is the preferred way of declaring an arbiratry number of parameters for a f
 // console.log(
 //    typeof Object.getPrototypeOf(Array));
 
+
+
+/* How do we list every property in an object? → */
+for (const prop in obj) {
+	console.log(prop)
+}
