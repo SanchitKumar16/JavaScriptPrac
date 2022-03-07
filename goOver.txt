@@ -158,3 +158,18 @@ In JavaScript, an object is basically just a container of properties
 properties have names and values
 a property can be any string
 values can be any value, including functions (called methods)
+
+
+-------------------------------Where Not to Use Arrow Functions-----------------------------
+
+Well, if arrow functions are so great, why don't we use arrow functions all of the time? →
+There are some places where they don't work quite right.
+
+-creating constructors
+-creating methods
+    -either on object literals
+    -or on prototypes
+-(not relevant now, but) creating addEventListener callbacks where you want this to refer to the element that generated the event
+
+But why not? →
+Remember, arrow functions do not bind this to a new value, and instead gets its this from the enclosing scope

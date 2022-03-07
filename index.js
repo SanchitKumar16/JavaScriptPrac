@@ -736,6 +736,37 @@ What is the preferred way of declaring an arbiratry number of parameters for a f
 // 	console.log(prop)
 // }
 
-const cat = {cute: 'very'};
-const kitten = Object.create(cat);
-console.log(kitten.cute); // <-- kitten inherits cute from cat! 
+// const cat = {cute: 'very'};
+// const kitten = Object.create(cat);
+// console.log(kitten.cute); // <-- kitten inherits cute from cat! 
+
+// function Cat() { }
+// const c = new Cat();
+// Cat.prototype.cute = 'very';
+// console.log(c.cute); 
+// ^-- such wow! c gained a new prop even though
+// it was instantiated before setting a property
+// on Cat's prototype object
+
+/* In arrow functions, this is whatever this refers to in the context where the arrow function was created. 
+So, the code below, which produces a bunch of undefined's, 
+can be fixed by converting the anonymous function into an arrow function. → */
+
+// const counter = {numbers: [1, 2, 3, 4], animal:'owl'};
+// counter.count = function() {
+//     this.numbers.forEach(function(n) {
+//         console.log(n, this.animal + (n > 1 ? 's' : ''));
+//     });
+// };
+// counter.count(); // uh-oh... prints undefined 4 times!!!!
+
+// /* Fixed by arrow functions: → */
+
+// counter.count = function() {
+//     this.numbers.forEach((n) => {
+//         // this refers to the this in count!
+//         console.log(n, this.animal + (n > 1 ? 's' : ''));
+//     });
+// }; // ah, saved by an arrow function
+
+// counter.count();
