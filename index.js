@@ -670,8 +670,62 @@ What is the preferred way of declaring an arbiratry number of parameters for a f
 // person1.emote(); // (• ε •)
 // person2.emote(); // (╯°□°）╯︵ ┻━┻
 
-function returnThis() {
-	return this;	
-}
+// function returnThis() {
+// 	return this;	
+// }
 
-console.log("Is global the same as function? " + (returnThis() === global));
+// console.log("Is global the same as function? " + (returnThis() === global));
+
+// function showEmotion() {
+// 	console.log(this.emotion);
+// }
+// const justAnotherObject = {emotion:'(=^ェ^=)'};
+// showEmotion.call(justAnotherObject);
+
+/* This time, with bind. Notice that bind returns a new function that's bound to the object that's passed in. → */
+
+// function showEmotion() {
+// 	console.log(this.emotion);
+// }
+
+// const justAnotherObject = {emotion:'(=^ェ^=)'};
+
+// const boundShowEmotion = showEmotion.bind(justAnotherObject);
+
+// boundShowEmotion();
+
+/* Call, Apply, and Bind allow a function's this object to be explicitly set. */
+
+// const hat = {}; 
+// console.log(hat.toString); // a function
+// console.log(hat.toString()); // returns object
+
+// const obj = {};
+// console.log(Object.getPrototypeOf(obj));
+
+// console.log(
+// 	Object.getPrototypeOf({}) == Object.prototype);
+
+// console.log(
+// 	Object.getPrototypeOf(Object.prototype)); 
+
+// console.log(
+//     Object.getPrototypeOf(Object)); 
+
+// function f(x) { return x;}
+
+// console.log(
+// 	Object.getPrototypeOf(f) == Function.prototype);
+
+// console.log(
+// 	Object.getPrototypeOf([1, 2, 3]) == Array.prototype);
+
+// console.log(
+// 	Object.getPrototypeOf(Array.prototype) == Object.prototype);
+
+// console.log(
+//     Object.getPrototypeOf(Array.prototype));
+
+// console.log(
+//    typeof Object.getPrototypeOf(Array));
+

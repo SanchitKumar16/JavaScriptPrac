@@ -109,3 +109,32 @@ What is this?????
     What About 'Regular' Functions?
 If a function that's not attached to an object is invoked,
 its this refers to the global object (uh, bad. maybe?). What will the following code print out? →
+
+
+Summary
+There are three patterns we've seen for invoking functions. Name those three patterns, and what this refers to each. →
+
+method invocation - this refers to the object the method was called on
+function invocation - this refers to the global object
+apply, call, and bind - this is whatever you pass in as the first argument
+
+
+searching goes on up the chain of prototypes until
+    -the property is found
+    -an object with a null prototype is reached / the last object in the chain: Object.prototype
+
+
+
+The top level prototype is Object.prototype:
+
+all objects in JavaScript are descended from Object
+all objects inherit methods and properties from Object.prototype
+Object.prototype's [[prototype]] is null
+
+Let's do some exploring. →
+
+use Object.getPrototypeOf(obj)
+this gives back the [[prototype]] of the passed in object obj…
+
+functions derive from Function.prototype
+arrays derive from Array.prototype
