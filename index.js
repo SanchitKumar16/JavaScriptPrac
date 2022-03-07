@@ -732,6 +732,10 @@ What is the preferred way of declaring an arbiratry number of parameters for a f
 
 
 /* How do we list every property in an object? → */
-for (const prop in obj) {
-	console.log(prop)
-}
+// for (const prop in obj) {
+// 	console.log(prop)
+// }
+
+const cat = {cute: 'very'};
+const kitten = Object.create(cat);
+console.log(kitten.cute); // <-- kitten inherits cute from cat! 

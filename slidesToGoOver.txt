@@ -2,3 +2,11 @@ https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.
 
 https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/23 ---> Go over how to call multiple properties
                                                                                             and methods from the super class.
+
+
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/30
+
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/33
+
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/prototypes.html#/39
+
