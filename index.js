@@ -635,3 +635,43 @@ Let's see how this works: → */
 // console.log(message);
 // console.log(global.message);
 
+/* What's a method? →
+
+a method is an object property that is a function (or a function within the context of an object).
+you can create methods pretty easily… */
+
+// const person = {};
+// person.emote = function() {
+// 	console.log('(っ˘̩╭╮˘̩)っ'); 
+// };
+// person.emote(); // sad face - (っ˘̩╭╮˘̩)っ
+
+/* 
+To call a method on an object, use:
+
+the object's name
+followed by a dot,
+then a method name
+…and finally parentheses (with an optional list of arguments!) */
+
+/* What's the arguments object? →
+arguments is an array like object that contains all of the arguments (surprise!) passed in to a function.
+What is the preferred way of declaring an arbiratry number of parameters for a function in ES6, though → */
+
+/* A function's this varies based on how the function is invoked! */
+
+// function showEmotion() {
+// 	console.log(this.emotion);
+// }
+
+// const person1 = {emotion:"(• ε •)", emote: showEmotion};
+// const person2 = {emotion:"(╯°□°）╯︵ ┻━┻", emote: showEmotion};
+
+// person1.emote(); // (• ε •)
+// person2.emote(); // (╯°□°）╯︵ ┻━┻
+
+function returnThis() {
+	return this;	
+}
+
+console.log("Is global the same as function? " + (returnThis() === global));

@@ -102,3 +102,10 @@ What is this?????
     -this is the first argument passed in to call or apply
 4.arrow function
     -this is this from the enclosing context
+
+
+    ------------------------------------------------------------------
+
+    What About 'Regular' Functions?
+If a function that's not attached to an object is invoked,
+its this refers to the global object (uh, bad. maybe?). What will the following code print out? →
