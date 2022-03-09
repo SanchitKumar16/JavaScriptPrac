@@ -1,0 +1,25 @@
+
+<form method="GET" action="">
+		lives: <input type="number" name="lives" value="">	
+		<input type="submit">	
+</form>
+
+<table>
+{{#each cats as |c|}}
+	<tr>
+		<td>{{c.name}}</td>
+		<td>{{c.lives}}</td>
+	</tr>
+{{/each}}
+</table>
+{{#if error}}
+<h1 style="color:red">{{error}}</h1>
+{{/if}}
+
+<form method="POST" >
+		name: <input type="text" name="catName" value="">	
+		<br>
+		lives: <input type="number" name="lives" value="">	
+		<input type="submit">	
+</form>
+
