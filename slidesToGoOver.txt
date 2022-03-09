@@ -17,3 +17,6 @@ https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/05/objects-rev
 https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/06/webserver.html#/1
 
 https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/07/sockets-review.html#/7
+
+
+https://cs.nyu.edu/courses/spring22/CSCI-UA.0467-001/_site/slides/js/higher-order-functions-continued.html#/3  ----> HOF 
