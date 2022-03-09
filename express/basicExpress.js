@@ -20,6 +20,18 @@ const cats = [
   {name: 'paw newman', lives: 2}
 ];
 
+app.use('/',function(req, res, next) {  // hello middleware. 
+	console.log('hello');
+	next();
+});   
+
+
+app.get('/cat', (req,res) => {
+  //res.send('cat');
+  res.render('cat')
+
+});
+
 app.get('/', (req, res) => {
   let data = cats;
   if(Object.prototype.hasOwnProperty.call(req.query, 'lives')) {
